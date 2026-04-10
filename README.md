@@ -56,5 +56,6 @@ The project demonstrates lung CT scan classification using deep learning and inc
 ## Example Prediction
 
 Below is an example prediction from the trained CNN model.
+plt.savefig("prediction_example.png")
 
 Prediction: Malignant
