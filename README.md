@@ -57,9 +57,11 @@ The project demonstrates lung CT scan classification using deep learning and inc
 
 Below are example predictions from the trained CNN model.
 
+---
+
 ### Normal Lung CT Scan
 
-![Normal Prediction](images/prediction_normal.png)
+![Normal Lung Prediction](images/prediction_normal.png)
 
 Model Prediction: **Normal**
 
@@ -67,6 +69,6 @@ Model Prediction: **Normal**
 
 ### Malignant Lung CT Scan
 
-![Malignant Prediction](images/prediction_malignant.png)
+![Malignant Lung Prediction](images/prediction_malignant.png)
 
 Model Prediction: **Malignant**
