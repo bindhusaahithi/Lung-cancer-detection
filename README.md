@@ -53,9 +53,20 @@ The project demonstrates lung CT scan classification using deep learning and inc
 - Use larger medical imaging datasets
 - Deploy the model using Streamlit or Flask
 
-## Example Prediction
+## Example Predictions
 
-Below is an example prediction from the trained CNN model.
-plt.savefig("prediction_example.png")
+Below are example predictions from the trained CNN model.
 
-Prediction: Malignant
+### Normal Lung CT Scan
+
+![Normal Prediction](images/prediction_normal.png)
+
+Model Prediction: **Normal**
+
+---
+
+### Malignant Lung CT Scan
+
+![Malignant Prediction](images/prediction_malignant.png)
+
+Model Prediction: **Malignant**
