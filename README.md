@@ -72,3 +72,19 @@ Model Prediction: **Normal**
 ![Malignant Lung Prediction](images/prediction_malignant.png)
 
 Model Prediction: **Malignant**
+
+## Model Performance
+
+### Training Accuracy
+
+![Training Accuracy](images/training_accuracy.png)
+
+This graph shows the training and validation accuracy of the CNN model during training.
+
+---
+
+### Confusion Matrix
+
+![Confusion Matrix](images/confusion_matrix.png)
+
+The confusion matrix shows how well the model classified each CT scan category.
