@@ -52,3 +52,9 @@ The project demonstrates lung CT scan classification using deep learning and inc
 - Add transfer learning models
 - Use larger medical imaging datasets
 - Deploy the model using Streamlit or Flask
+
+## Example Prediction
+
+Below is an example prediction from the trained CNN model.
+
+Prediction: Malignant
