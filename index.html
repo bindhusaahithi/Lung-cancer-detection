@@ -2,137 +2,117 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Lung Cancer Detection | Bindhu Saahithi</title>
-
+<title>Lung Cancer Detection | Deep Learning</title>
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-<header class="navbar">
-
-<h2>Bindhu Saahithi</h2>
-
-<nav>
-<a href="#overview">Overview</a>
-<a href="#workflow">Workflow</a>
-<a href="#results">Results</a>
-<a href="https://github.com/bindhusaahithi/Lung-cancer-detection" target="_blank">GitHub</a>
-</nav>
-
-</header>
-
-
-<section class="hero">
-
+<header>
 <h1>Lung Cancer Detection using Deep Learning</h1>
-
-<p>
-A deep learning project that classifies lung CT scan images using Convolutional Neural Networks (CNNs).
-The project includes both binary and multi-class models for detecting lung abnormalities.
-</p>
+<p>Deep Learning project using CNN to classify lung CT scan images.</p>
 
 <div class="buttons">
-
-<a href="https://github.com/bindhusaahithi/Lung-cancer-detection" class="btn">View GitHub</a>
-
+<a href="https://github.com/bindhusaahithi/Lung-cancer-detection" target="_blank">View GitHub</a>
 </div>
+</header>
 
-</section>
-
-
-<section class="container" id="overview">
-
+<section class="overview">
 <h2>Project Overview</h2>
 
 <p>
-This project uses deep learning techniques to classify lung CT scan images.
-Two CNN models were built:
+This project uses Convolutional Neural Networks (CNNs) to detect lung cancer from CT scan images.
+The model was trained to classify scans into multiple categories including Normal, Benign, and Malignant.
 </p>
 
+<p>
+The goal of this project is to demonstrate deep learning techniques applied to medical imaging
+and build an automated system for lung cancer detection.
+</p>
+
+</section>
+
+<section class="tools">
+
+<h2>Tools & Technologies</h2>
+
 <ul>
-<li>Binary classification: Cancer vs Normal</li>
-<li>Multi-class classification: Benign, Malignant, Normal</li>
+<li>Python</li>
+<li>TensorFlow / Keras</li>
+<li>NumPy</li>
+<li>OpenCV</li>
+<li>Matplotlib</li>
+<li>Scikit-learn</li>
+<li>Jupyter Notebook</li>
 </ul>
 
 </section>
 
+<section class="dataset">
 
-<section class="container">
+<h2>Dataset</h2>
 
-<h2>Tools & Technologies</h2>
+<p>
+Dataset: IQ-OTHNCCD Lung Cancer Dataset
+</p>
 
-<div class="tags">
+<p>
+The dataset contains CT scan images categorized into three classes:
+</p>
 
-<span>Python</span>
-<span>TensorFlow</span>
-<span>Keras</span>
-<span>OpenCV</span>
-<span>NumPy</span>
-<span>Matplotlib</span>
-<span>Scikit-learn</span>
-
-</div>
-
-</section>
-
-
-<section class="container" id="workflow">
-
-<h2>Project Workflow</h2>
-
-<div class="workflow">
-
-<div>Load CT Scan Dataset</div>
-<div>Image Preprocessing</div>
-<div>Resize Images</div>
-<div>Train CNN Model</div>
-<div>Evaluate Model</div>
-<div>Save Model</div>
-<div>Prediction</div>
-
-</div>
+<ul>
+<li>Normal</li>
+<li>Benign</li>
+<li>Malignant</li>
+</ul>
 
 </section>
 
+<section class="results">
 
-<section class="container" id="results">
+<h2>Model Training Results</h2>
 
-<h2>Project Results</h2>
+<div class="graph-container">
 
-<div class="grid">
-
-<div class="card">
-<img src="images/training_accuracy.png">
+<div class="graph-card">
 <h3>Training Accuracy</h3>
+<img src="images/training_model_accuracy.png">
 </div>
 
-<div class="card">
-<img src="images/confusion_matrix.png">
-<h3>Confusion Matrix</h3>
-</div>
-
-<div class="card">
-<img src="images/prediction_normal.png">
-<h3>Prediction – Normal</h3>
-</div>
-
-<div class="card">
-<img src="images/prediction_malignant.png">
-<h3>Prediction – Malignant</h3>
+<div class="graph-card">
+<h3>Training Loss</h3>
+<img src="images/training_loss.png">
 </div>
 
 </div>
 
 </section>
 
+<section class="predictions">
+
+<h2>Example Predictions</h2>
+
+<div class="prediction-container">
+
+<div class="prediction-card">
+<h3>Normal Lung CT Scan</h3>
+<img src="images/prediction_normal.png">
+<p>Model Prediction: Normal</p>
+</div>
+
+<div class="prediction-card">
+<h3>Malignant Lung CT Scan</h3>
+<img src="images/prediction_malignant.png">
+<p>Model Prediction: Malignant</p>
+</div>
+
+</div>
+
+</section>
 
 <footer>
 
-<p>© 2026 Bindhu Saahithi</p>
+<p>© 2026 Bindhu Saahithi | Data Science Portfolio</p>
 
 </footer>
 
