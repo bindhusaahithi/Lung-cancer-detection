@@ -9,132 +9,222 @@
 <body>
 
   <header class="navbar">
-    <div class="logo">Bindhu Saahithi</div>
+    <div class="brand">Bindhu Saahithi</div>
     <nav>
       <a href="#overview">Overview</a>
       <a href="#workflow">Workflow</a>
       <a href="#results">Results</a>
+      <a href="#insights">Insights</a>
       <a href="https://github.com/bindhusaahithi/Lung-cancer-detection" target="_blank">GitHub</a>
     </nav>
   </header>
 
   <section class="hero">
-    <div class="hero-content">
-      <p class="hero-tag">DEEP LEARNING PROJECT</p>
-      <h1>Lung Cancer Detection using Deep Learning</h1>
-      <p class="hero-text">
-        A deep learning project using Convolutional Neural Networks (CNNs) to classify lung CT scan images.
-        This project includes both binary and multi-class models for detecting lung abnormalities.
-      </p>
-      <div class="hero-buttons">
-        <a href="https://github.com/bindhusaahithi/Lung-cancer-detection" target="_blank" class="btn primary-btn">View GitHub</a>
-        <a href="#results" class="btn secondary-btn">View Results</a>
-      </div>
+    <p class="eyebrow">DATA SCIENCE PROJECT PORTFOLIO</p>
+    <h1>Lung Cancer Detection using Deep Learning</h1>
+    <p class="hero-text">
+      A deep learning project using Convolutional Neural Networks (CNNs) to classify lung CT scan images.
+      This project includes both binary and multi-class models for detecting Normal, Benign, and Malignant lung conditions.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="https://github.com/bindhusaahithi/Lung-cancer-detection" target="_blank" class="btn primary-btn">View GitHub Repository</a>
+      <a href="#results" class="btn secondary-btn">View Results</a>
     </div>
   </section>
 
-  <main class="container">
+  <main class="page-content">
 
-    <section id="overview" class="section">
-      <div class="card full-width">
-        <h2>Project Overview</h2>
-        <p>
-          This project applies deep learning techniques to detect lung abnormalities from CT scan images.
-          Two CNN models were built to solve the problem at different levels of complexity.
-        </p>
-        <ul>
-          <li><strong>Basic CNN Model:</strong> Binary classification between <strong>Cancer</strong> and <strong>Normal</strong>.</li>
-          <li><strong>Advanced CNN Model:</strong> Multi-class classification between <strong>Benign</strong>, <strong>Malignant</strong>, and <strong>Normal</strong>.</li>
-        </ul>
-      </div>
+    <section id="overview" class="content-card full-width">
+      <h2>Project Overview</h2>
+      <p>
+        This project applies deep learning techniques to detect lung abnormalities from CT scan images.
+        Medical image classification is an important real-world use case of AI because early identification
+        of malignant patterns can help support faster and more accurate diagnostic workflows.
+      </p>
+      <p>
+        The dataset consists of lung CT scan images categorized into clinically meaningful classes.
+        These images were preprocessed and used to train CNN-based deep learning models capable of learning
+        visual patterns associated with cancer-related abnormalities.
+      </p>
+      <p>
+        Two versions of the project were built:
+      </p>
+      <ul>
+        <li><strong>Basic CNN Model:</strong> Binary classification between <strong>Cancer</strong> and <strong>Normal</strong>.</li>
+        <li><strong>Advanced CNN Model:</strong> Multi-class classification between <strong>Benign</strong>, <strong>Malignant</strong>, and <strong>Normal</strong>.</li>
+      </ul>
+      <p>
+        This project demonstrates practical skills in computer vision, image preprocessing, model training,
+        performance evaluation, result interpretation, and portfolio-level project presentation.
+      </p>
     </section>
 
-    <section class="section two-col">
-      <div class="card">
+    <section class="two-column">
+      <div class="content-card">
         <h2>Tools & Technologies</h2>
-        <div class="tag-list">
-          <span>Python</span>
-          <span>TensorFlow</span>
-          <span>Keras</span>
-          <span>OpenCV</span>
-          <span>NumPy</span>
-          <span>Matplotlib</span>
-          <span>Scikit-learn</span>
-          <span>Jupyter Notebook</span>
-        </div>
+        <ul>
+          <li>Python</li>
+          <li>TensorFlow / Keras</li>
+          <li>OpenCV</li>
+          <li>NumPy</li>
+          <li>Matplotlib</li>
+          <li>Scikit-learn</li>
+          <li>Jupyter Notebook</li>
+        </ul>
       </div>
 
-      <div class="card">
+      <div class="content-card">
         <h2>Dataset</h2>
         <p><strong>Dataset:</strong> IQ-OTHNCCD Lung Cancer Dataset</p>
-        <p>The dataset contains CT scan images categorized into three classes:</p>
+        <p>
+          The dataset contains CT scan images grouped into medically relevant classes.
+        </p>
         <ul>
           <li>Normal</li>
           <li>Benign</li>
           <li>Malignant</li>
         </ul>
+        <p>
+          Images were resized to 128×128, normalized, and organized into folder-based class structures
+          for training and evaluation.
+        </p>
       </div>
     </section>
 
-    <section id="workflow" class="section">
-      <div class="card full-width">
-        <h2>Project Workflow</h2>
-        <div class="workflow">
-          <span>Load CT Scan Dataset</span>
-          <span>Image Preprocessing</span>
-          <span>Resize Images</span>
-          <span>Normalize Pixels</span>
-          <span>Split Train/Test</span>
-          <span>Train CNN Model</span>
-          <span>Evaluate Model</span>
-          <span>Save Model</span>
-          <span>Prediction</span>
-        </div>
-      </div>
+    <section id="workflow" class="content-card full-width">
+      <h2>Project Workflow</h2>
+      <ol>
+        <li><strong>Data Preparation:</strong> Organized CT scan images into binary and multi-class folder structures.</li>
+        <li><strong>Preprocessing:</strong> Applied grayscale conversion, resizing, and normalization.</li>
+        <li><strong>Train-Test Split:</strong> Divided the dataset into training and testing subsets.</li>
+        <li><strong>Model Design:</strong> Built CNN architectures using convolution, pooling, flattening, and dense layers.</li>
+        <li><strong>Training:</strong> Trained the CNN models using TensorFlow/Keras.</li>
+        <li><strong>Evaluation:</strong> Measured performance using accuracy curves, loss curves, confusion matrix, and predictions.</li>
+        <li><strong>Model Saving:</strong> Saved the trained models in `.keras` format for later reuse.</li>
+        <li><strong>Prediction:</strong> Loaded saved models and predicted classes for unseen CT scan images.</li>
+      </ol>
     </section>
 
-    <section id="results" class="section">
-      <h2 class="section-title">Model Training Results</h2>
-      <div class="results-grid">
-        <div class="result-card">
-          <img src="images/training_model_accuracy.png" alt="Training Accuracy Graph">
+    <section class="content-card full-width">
+      <h2>Project Objectives</h2>
+      <ul>
+        <li>Build a CNN-based medical image classification pipeline for lung CT scan images.</li>
+        <li>Compare binary and multi-class classification approaches.</li>
+        <li>Visualize training behavior using model accuracy and loss graphs.</li>
+        <li>Interpret classification performance using confusion matrix and example predictions.</li>
+        <li>Present the complete project in a clean, recruiter-friendly portfolio format.</li>
+      </ul>
+    </section>
+
+    <section class="content-card full-width">
+      <h2>Skills Demonstrated</h2>
+      <ul>
+        <li>Medical image preprocessing</li>
+        <li>Deep learning with CNNs</li>
+        <li>Binary classification and multi-class classification</li>
+        <li>Model evaluation and result interpretation</li>
+        <li>Saving and loading trained models</li>
+        <li>GitHub project documentation and portfolio presentation</li>
+      </ul>
+    </section>
+
+    <section id="results" class="content-card full-width">
+      <h2>Model Training Results</h2>
+      <div class="visual-grid">
+        <div class="visual-card">
+          <img src="images/training_model_accuracy.png" alt="Training Accuracy">
           <h3>Training Accuracy</h3>
+          <p>
+            The training and validation accuracy curves show that the CNN improved its classification performance
+            steadily across epochs, indicating that the model learned meaningful image features from the dataset.
+          </p>
         </div>
 
-        <div class="result-card">
-          <img src="images/training_loss.png" alt="Training Loss Graph">
+        <div class="visual-card">
+          <img src="images/training_loss.png" alt="Training Loss">
           <h3>Training Loss</h3>
+          <p>
+            The loss curves decreased consistently during training, showing that the model reduced prediction error
+            and converged effectively while learning from CT scan images.
+          </p>
         </div>
-      </div>
-    </section>
 
-    <section class="section">
-      <h2 class="section-title">Example Predictions</h2>
-      <div class="results-grid">
-        <div class="result-card">
+        <div class="visual-card">
+          <img src="images/confusion_matrix.png" alt="Confusion Matrix">
+          <h3>Confusion Matrix</h3>
+          <p>
+            The confusion matrix summarizes class-wise prediction performance and helps visualize how accurately
+            the model distinguished between Normal, Benign, and Malignant lung scan categories.
+          </p>
+        </div>
+
+        <div class="visual-card">
+          <img src="images/sample_ct_scan.png" alt="Sample CT Scan">
+          <h3>Sample CT Scan Image</h3>
+          <p>
+            Example CT scan image from the dataset used for model training. This gives a visual sense of the type
+            of medical imaging data the CNN learned from during the project.
+          </p>
+        </div>
+
+        <div class="visual-card">
           <img src="images/prediction_normal.png" alt="Normal Prediction">
-          <h3>Prediction — Normal</h3>
+          <h3>Prediction Example — Normal</h3>
+          <p>
+            Example CT scan classified by the trained CNN as <strong>Normal</strong>, showing how the model can be
+            used to predict unseen images after training.
+          </p>
         </div>
 
-        <div class="result-card">
+        <div class="visual-card">
           <img src="images/prediction_malignant.png" alt="Malignant Prediction">
-          <h3>Prediction — Malignant</h3>
+          <h3>Prediction Example — Malignant</h3>
+          <p>
+            Example CT scan classified by the trained CNN as <strong>Malignant</strong>, demonstrating the model’s
+            ability to identify critical abnormal patterns in lung imaging data.
+          </p>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="card full-width center-card">
-        <h2>GitHub Repository</h2>
-        <p>You can view the complete project, code, models, notebooks, and documentation on GitHub.</p>
-        <a href="https://github.com/bindhusaahithi/Lung-cancer-detection" target="_blank" class="btn primary-btn">Open GitHub Project</a>
-      </div>
+    <section id="insights" class="content-card full-width">
+      <h2>Key Insights</h2>
+      <ul>
+        <li>The CNN model successfully learned visual patterns from lung CT scan images and achieved strong classification performance.</li>
+        <li>The multi-class model made the project richer and more realistic than a simple binary-only setup.</li>
+        <li>Accuracy improved steadily while loss decreased, indicating stable model learning behavior.</li>
+        <li>Prediction examples make the project easier to understand and demonstrate real model usage.</li>
+        <li>This project shows how deep learning can be applied to real-world medical imaging tasks in a structured workflow.</li>
+      </ul>
+    </section>
+
+    <section class="content-card full-width">
+      <h2>Why This Project Matters</h2>
+      <p>
+        Lung cancer detection is an important area in healthcare AI because medical imaging contains rich visual
+        information that can be leveraged by deep learning models. This project demonstrates how a CNN-based workflow
+        can be applied to CT scan images to support automated classification tasks.
+      </p>
+      <p>
+        Beyond the healthcare relevance, this project also reflects practical machine learning engineering skills:
+        dataset handling, preprocessing, model development, evaluation, visualization, result interpretation,
+        and technical presentation on GitHub and portfolio platforms.
+      </p>
+    </section>
+
+    <section class="content-card full-width center-card">
+      <h2>Project Link</h2>
+      <p>
+        Explore the full notebooks, trained models, README, and project assets on GitHub.
+      </p>
+      <a href="https://github.com/bindhusaahithi/Lung-cancer-detection" target="_blank" class="btn primary-btn">Open GitHub Repository</a>
     </section>
 
   </main>
 
   <footer class="footer">
-    <p>© 2026 Bindhu Saahithi | Lung Cancer Detection Project</p>
+    <p>© 2026 Bindhu Saahithi | Data Science Portfolio</p>
   </footer>
 
 </body>
