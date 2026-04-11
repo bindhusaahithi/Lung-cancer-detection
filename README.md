@@ -88,3 +88,13 @@ This graph shows the training and validation accuracy of the CNN model during tr
 ![Confusion Matrix](images/confusion_matrix.png)
 
 The confusion matrix shows how well the model classified each CT scan category.
+
+## Model Training Results
+
+### Training Accuracy
+
+![Training Accuracy](images/training_model_accuracy.png)
+
+### Training Loss
+
+![Training Loss](images/training_loss.png)
