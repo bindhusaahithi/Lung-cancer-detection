@@ -23,8 +23,7 @@
     <p class="eyebrow">DEEP LEARNING PROJECT</p>
     <h1>Lung Cancer Detection using Deep Learning</h1>
     <p class="hero-text">
-      A deep learning project using Convolutional Neural Networks (CNNs) to classify lung CT scan images.
-      This project includes binary and multi-class models for detecting lung abnormalities.
+      A deep learning project using Convolutional Neural Networks (CNNs) to classify lung CT scan images and detect lung abnormalities through binary and multi-class image classification.
     </p>
 
     <div class="hero-buttons">
@@ -38,18 +37,13 @@
     <section id="overview" class="content-card full-width">
       <h2>Project Overview</h2>
       <p>
-        This project applies deep learning techniques to classify lung CT scan images and identify patterns
-        related to lung abnormalities. Medical image classification is an important application of AI because
-        neural networks can learn subtle visual features from imaging data.
+        This project uses deep learning techniques to classify lung CT scan images and identify patterns related to lung abnormalities. Medical image classification is an important AI application because convolutional neural networks can learn subtle visual features directly from imaging data.
       </p>
       <p>
-        Two versions of the project were developed. The first is a basic binary classification model to distinguish
-        between Cancer and Normal CT scans. The second is an advanced multi-class model that classifies scans into
-        Benign, Malignant, and Normal categories.
+        Two versions of the project were developed. The first is a binary classification model for distinguishing between Cancer and Normal CT scans. The second is an advanced multi-class model for classifying CT scans into Benign, Malignant, and Normal categories.
       </p>
       <p>
-        This project demonstrates practical skills in image preprocessing, CNN model design, training, evaluation,
-        result visualization, and prediction generation.
+        This project demonstrates practical skills in image preprocessing, CNN model building, training, evaluation, result visualization, model saving, and prediction on unseen medical images.
       </p>
     </section>
 
@@ -71,16 +65,14 @@
       <div class="content-card">
         <h2>Dataset</h2>
         <p><strong>Dataset:</strong> IQ-OTHNCCD Lung Cancer Dataset</p>
-        <p>
-          The dataset contains CT scan images categorized into three classes:
-        </p>
+        <p>The dataset contains CT scan images categorized into the following classes:</p>
         <ul>
           <li>Normal</li>
           <li>Benign</li>
           <li>Malignant</li>
         </ul>
         <p>
-          Images were resized, normalized, and organized into class-based folders for model training.
+          Images were resized, normalized, and organized into class-based folders for model training and testing.
         </p>
       </div>
     </section>
@@ -88,24 +80,25 @@
     <section id="workflow" class="content-card full-width">
       <h2>Project Workflow</h2>
       <ol>
-        <li>Data Preparation – Organizing CT scan images into class folders</li>
-        <li>Image Preprocessing – Resizing, normalization, and grayscale conversion</li>
-        <li>Train-Test Split – Dividing data into training and testing sets</li>
-        <li>Model Design – Building CNN architectures</li>
-        <li>Model Training – Training the neural network using TensorFlow/Keras</li>
-        <li>Evaluation – Measuring accuracy, loss, and confusion matrix</li>
-        <li>Prediction – Testing the trained model on unseen CT scan images</li>
+        <li>Data preparation and folder organization of CT scan images</li>
+        <li>Image preprocessing including resizing and normalization</li>
+        <li>Train-test split for model development</li>
+        <li>CNN architecture design using convolutional and dense layers</li>
+        <li>Model training using TensorFlow / Keras</li>
+        <li>Performance evaluation using accuracy, loss, and confusion matrix</li>
+        <li>Prediction on unseen CT scan images</li>
+        <li>Saving trained models for later reuse</li>
       </ol>
     </section>
 
     <section class="content-card full-width">
       <h2>Project Objectives</h2>
       <ul>
-        <li>Build a CNN-based workflow for lung CT scan classification.</li>
-        <li>Compare binary and multi-class classification approaches.</li>
-        <li>Visualize model learning using accuracy and loss curves.</li>
-        <li>Evaluate class-level performance using confusion matrix heatmap.</li>
-        <li>Demonstrate real example predictions on unseen CT scan images.</li>
+        <li>Build a CNN-based workflow for lung CT scan image classification</li>
+        <li>Compare binary and multi-class classification approaches</li>
+        <li>Visualize model learning through training accuracy and loss curves</li>
+        <li>Evaluate class-level performance using confusion matrix heatmap</li>
+        <li>Demonstrate real model predictions on unseen CT scan images</li>
       </ul>
     </section>
 
@@ -113,10 +106,10 @@
       <h2>Skills Demonstrated</h2>
       <ul>
         <li>Medical image preprocessing</li>
-        <li>Convolutional Neural Networks (CNNs)</li>
+        <li>Deep learning with Convolutional Neural Networks</li>
         <li>Binary and multi-class classification</li>
-        <li>Model evaluation and interpretation</li>
-        <li>Saving and loading trained models</li>
+        <li>Model evaluation and result interpretation</li>
+        <li>Prediction visualization</li>
         <li>GitHub documentation and portfolio presentation</li>
       </ul>
     </section>
@@ -129,7 +122,7 @@
           <img src="images/training_accuracy.png" alt="Training Accuracy">
           <h3>Training vs Validation Accuracy</h3>
           <p>
-            This graph shows how both training accuracy and validation accuracy improved during training.
+            This graph shows how both training accuracy and validation accuracy improved during training across epochs.
           </p>
         </div>
 
@@ -137,7 +130,7 @@
           <img src="images/training_loss.png" alt="Training Loss">
           <h3>Training vs Validation Loss</h3>
           <p>
-            This graph shows how training and validation loss decreased across epochs.
+            This graph shows how training and validation loss decreased across epochs, indicating improved model learning.
           </p>
         </div>
 
@@ -145,7 +138,7 @@
           <img src="images/confusion_matrix.png" alt="Confusion Matrix">
           <h3>Confusion Matrix Heatmap</h3>
           <p>
-            This heatmap summarizes how accurately the model classified Normal, Benign, and Malignant images.
+            This heatmap summarizes how accurately the model classified Normal, Benign, and Malignant CT scan images.
           </p>
         </div>
 
@@ -181,22 +174,18 @@
         <li>The CNN model successfully learned meaningful visual patterns from lung CT scan images.</li>
         <li>Training accuracy improved steadily while loss consistently decreased.</li>
         <li>The confusion matrix helped validate class-level model performance.</li>
-        <li>The multi-class approach made the project more realistic and more representative of real medical classification tasks.</li>
-        <li>Prediction examples demonstrate how the trained model can classify unseen lung CT scan images.</li>
+        <li>The prediction distribution plot added another layer of result interpretation.</li>
+        <li>The model demonstrates practical deep learning application in medical image analysis.</li>
       </ul>
     </section>
 
     <section class="content-card full-width">
       <h2>Why This Project Matters</h2>
       <p>
-        Lung cancer detection is an important use case in medical AI because imaging data contains rich patterns
-        that deep learning models can analyze efficiently. This project demonstrates how CNNs can be applied to
-        CT scan images for automated classification tasks.
+        Lung cancer detection is an important use case in healthcare AI because CT scan images contain rich visual patterns that deep learning models can analyze efficiently. This project shows how CNNs can support image-based classification tasks in a structured machine learning workflow.
       </p>
       <p>
-        Beyond the healthcare context, this project also reflects important machine learning engineering skills:
-        data preparation, preprocessing, model training, evaluation, visualization, and presenting results in
-        a structured portfolio format.
+        Beyond the medical context, this project also demonstrates strong machine learning engineering skills including data handling, preprocessing, training, evaluation, result visualization, and project presentation.
       </p>
     </section>
 
