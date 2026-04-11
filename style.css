@@ -47,13 +47,13 @@ a {
 }
 
 .hero {
-  background: linear-gradient(135deg, #4c0d0d, #db001b);
+  background: linear-gradient(135deg, #163d8f, #3f7cf0);
   text-align: center;
   padding: 95px 20px 95px;
 }
 
 .eyebrow {
-  color: #ffd6db;
+  color: #dbe7ff;
   letter-spacing: 1.8px;
   font-size: 11px;
   margin-bottom: 14px;
@@ -89,7 +89,7 @@ a {
 
 .primary-btn {
   background: white;
-  color: #b10014;
+  color: #1c4fb8;
 }
 
 .secondary-btn {
@@ -127,7 +127,7 @@ a {
 }
 
 .content-card h2 {
-  color: #ff5c6c;
+  color: #8ec5ff;
   margin-bottom: 14px;
   font-size: 28px;
 }
@@ -220,7 +220,7 @@ a {
     padding: 16px 20px;
   }
 
-  .navbar nav a {
-    margin: 0 8px;
-  }
+ .navbar nav a:hover {
+  color: #8ec5ff;
+ }
 }
