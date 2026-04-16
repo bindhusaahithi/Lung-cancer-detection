@@ -1,100 +1,171 @@
 # Lung Cancer Detection using Deep Learning
 
 ## Project Overview
-This project uses Convolutional Neural Networks (CNNs) to classify lung CT scan images.
 
-Two versions of the project were developed:
-- **Basic CNN Model**: Binary classification (`Cancer` vs `Normal`)
-- **Advanced CNN Model**: Multi-class classification (`Benign`, `Malignant`, `Normal`)
+This project explores the application of deep learning techniques for lung CT scan image classification using Convolutional Neural Networks (CNNs).
 
-## Dataset Structure
+The goal of the project is to build an end-to-end workflow that can classify lung CT scan images and demonstrate how deep learning models can learn visual features from medical imaging data.
 
-### Basic Dataset
-- `Data/cancer`
-- `Data/normal`
+Two versions of the model were developed:
 
-### Advanced Dataset
-- `Data_3class/benign`
-- `Data_3class/malignant`
-- `Data_3class/normal`
+• **Binary Classification Model**  
+Classifies CT scans as **Cancer** or **Normal**
 
-## Project Workflow
-1. Organize CT scan images into class-based folders
-2. Preprocess images using OpenCV
-3. Resize images to `128x128`
-4. Normalize pixel values
-5. Split data into training and testing sets
-6. Build CNN model
-7. Train and evaluate the model
-8. Save trained models for later use
-9. Load the saved models and make predictions
+• **Multi-Class Classification Model**  
+Classifies CT scans into:
 
-## Models
-- `lung_cancer_cnn_model.keras` → Basic binary CNN model
-- `advanced_lung_cancer_model.keras` → Advanced multi-class CNN model
+- Benign  
+- Malignant  
+- Normal  
 
-## Technologies Used
+This project demonstrates a **proof-of-concept deep learning workflow**, including data preprocessing, CNN model development, training, evaluation, and visualization of model predictions.
+
+---
+
+# Dataset
+
+The dataset used in this project is the **IQ-OTHNCCD Lung Cancer Dataset**, which contains CT scan images categorized into three classes.
+
+### Classes
+
+• **Normal** – CT scans without lung cancer  
+• **Benign** – Non-cancerous lung abnormalities  
+• **Malignant** – Cancerous lung tumors  
+
+### Dataset Characteristics
+
+- CT scan images
+- Class-labeled folders
+- Used for image classification experiments
+- Preprocessed and resized before model training
+
+All images were converted to grayscale and resized to **128 × 128 pixels** before training.
+
+---
+
+# Tools & Technologies
+
+This project uses the following tools and libraries:
+
+**Programming Language**
 - Python
-- TensorFlow / Keras
-- OpenCV
+
+**Deep Learning Framework**
+- TensorFlow
+- Keras
+
+**Data Processing**
 - NumPy
+- OpenCV
+
+**Visualization**
 - Matplotlib
+- Seaborn
+
+**Machine Learning Utilities**
 - Scikit-learn
 
-## Notebooks
-- `basic_cnn_lung_cancer_detection.ipynb`
-- `advanced_lung_cancer_detection.ipynb`
-
-## Results
-The project demonstrates lung CT scan classification using deep learning and includes prediction examples from trained models.
-
-## Future Improvements
-- Add transfer learning models
-- Use larger medical imaging datasets
-- Deploy the model using Streamlit or Flask
-
-## Example Predictions
-
-Below are example predictions from the trained CNN model.
+**Development Environment**
+- Jupyter Notebook
 
 ---
 
-### Normal Lung CT Scan
+# Project Workflow
 
-![Normal Lung Prediction](images/prediction_normal.png)
+The overall workflow of the project includes:
 
-Model Prediction: **Normal**
+1. Dataset preparation and folder organization
+2. Image preprocessing using OpenCV
+3. Image resizing and normalization
+4. Train-test dataset splitting
+5. CNN architecture development
+6. Model training using TensorFlow/Keras
+7. Model evaluation
+8. Visualization of training results
+9. Prediction on CT scan images
+10. Saving trained models
 
 ---
 
-### Malignant Lung CT Scan
+# CNN Model Architecture
 
-![Malignant Lung Prediction](images/prediction_malignant.png)
+The CNN architecture includes:
 
-Model Prediction: **Malignant**
+- Convolution Layers
+- MaxPooling Layers
+- Flatten Layer
+- Dense Layers
+- Dropout Layer
+- Output Layer
 
-## Model Performance
+The model learns visual patterns from CT scan images and uses these learned features to classify lung conditions.
 
-### Training Accuracy
+---
+
+# Results
+
+The advanced CNN model demonstrates a proof-of-concept workflow for multi-class classification of lung CT scan images within the current dataset split.
+
+---
+
+## Training Accuracy
 
 ![Training Accuracy](images/training_accuracy.png)
 
-This graph shows the training and validation accuracy of the CNN model during training.
+This graph shows how training and validation accuracy changed during model training on the current dataset split.
 
 ---
 
-### Confusion Matrix
+## Training Loss
+
+![Training Loss](images/training_loss.png)
+
+This graph shows how training and validation loss changed across training epochs.
+
+---
+
+## Confusion Matrix
 
 ![Confusion Matrix](images/confusion_matrix.png)
 
-The confusion matrix shows how well the model classified each CT scan category.
+The confusion matrix summarizes prediction results across the **Benign**, **Malignant**, and **Normal** classes.
 
-## Model Training Results
+---
 
-### Training Accuracy
+## Prediction Distribution
 
-![Training Accuracy](images/training_model_accuracy.png)
+![Prediction Distribution](images/prediction_distribution.png)
 
-### Training Loss
+This chart shows the distribution of predictions made by the trained CNN model across the different classes.
 
-![Training Loss](images/training_loss.png)
+---
+
+## Example Predictions
+
+### Normal Prediction
+
+![Prediction Normal](images/prediction_normal.png)
+
+### Malignant Prediction
+
+![Prediction Malignant](images/prediction_malignant.png)
+
+These examples illustrate how the trained CNN model predicts lung CT scan images.
+
+---
+
+# Limitations
+
+This project is intended as a **proof-of-concept deep learning workflow** for medical image classification.
+
+The current results are based on a dataset-specific train-test split and do not include:
+
+- external validation datasets  
+- patient-level splitting  
+- clinical validation  
+
+Therefore, the results should **not be interpreted as clinical diagnostic performance**.
+
+---
+
+# Project Structure
