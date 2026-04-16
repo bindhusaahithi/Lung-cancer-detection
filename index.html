@@ -122,7 +122,7 @@
           <img src="images/training_accuracy.png" alt="Training Accuracy">
           <h3>Training vs Validation Accuracy</h3>
           <p>
-            This graph shows how both training accuracy and validation accuracy improved during training across epochs.
+           This graph shows how training and validation accuracy changed during model training on the current dataset split. These results are useful for understanding model learning behavior, but they do not by themselves establish clinical reliability..
           </p>
         </div>
 
@@ -130,7 +130,7 @@
           <img src="images/training_loss.png" alt="Training Loss">
           <h3>Training vs Validation Loss</h3>
           <p>
-            This graph shows how training and validation loss decreased across epochs, indicating improved model learning.
+            This graph shows how training and validation loss decreased across epochs for the current experiment, suggesting that the model fit the dataset effectively under this train-test setup.
           </p>
         </div>
 
@@ -171,7 +171,7 @@
     <section id="insights" class="content-card full-width">
       <h2>Key Insights</h2>
       <ul>
-        <li>The CNN model successfully learned meaningful visual patterns from lung CT scan images.</li>
+        <li>The CNN model demonstrates the ability to learn visual features from lung CT scan images in this dataset and perform multi-class classification as a proof-of-concept deep learning workflow.
         <li>Training accuracy improved steadily while loss consistently decreased.</li>
         <li>The confusion matrix helped validate class-level model performance.</li>
         <li>The prediction distribution plot added another layer of result interpretation.</li>
