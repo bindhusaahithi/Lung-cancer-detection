@@ -169,3 +169,24 @@ Therefore, the results should **not be interpreted as clinical diagnostic perfor
 ---
 
 # Project Structure
+Lung-Cancer-Detection
+│
+├── images
+│ ├── training_accuracy.png
+│ ├── training_loss.png
+│ ├── confusion_matrix.png
+│ ├── prediction_distribution.png
+│ ├── prediction_normal.png
+│ └── prediction_malignant.png
+
+├── Notebook
+│ ├── basic_cnn_lung_cancer_detection.ipynb
+│ └── advanced_lung_cancer_detection.ipynb
+
+├── models
+│ ├── lung_cancer_cnn_model.keras
+│ └── advanced_lung_cancer_model.keras
+
+├── index.html
+├── style.css
+├── README.md
