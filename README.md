@@ -102,13 +102,15 @@ The model learns visual patterns from CT scan images and uses these learned feat
 
 ---
 
-# Results
+## Results
 
-The advanced CNN model demonstrates a proof-of-concept workflow for multi-class classification of lung CT scan images within the current dataset split.
+The advanced CNN model demonstrates a proof-of-concept workflow for multi-class classification of lung CT scan images using the current dataset split.
+
+The following visualizations summarize model training behavior and prediction outputs.
 
 ---
 
-## Training Accuracy
+### Training Accuracy
 
 ![Training Accuracy](images/training_accuracy.png)
 
@@ -116,7 +118,7 @@ This graph shows how training and validation accuracy changed during model train
 
 ---
 
-## Training Loss
+### Training Loss
 
 ![Training Loss](images/training_loss.png)
 
@@ -124,7 +126,7 @@ This graph shows how training and validation loss changed across training epochs
 
 ---
 
-## Confusion Matrix
+### Confusion Matrix
 
 ![Confusion Matrix](images/confusion_matrix.png)
 
@@ -132,40 +134,22 @@ The confusion matrix summarizes prediction results across the **Benign**, **Mali
 
 ---
 
-## Prediction Distribution
+### Prediction Distribution
 
 ![Prediction Distribution](images/prediction_distribution.png)
 
-This chart shows the distribution of predictions made by the trained CNN model across the different classes.
+This chart shows how many images were predicted for each class by the trained CNN model.
 
 ---
 
-## Example Predictions
 
-### Normal Prediction
+## Limitations
 
-![Prediction Normal](images/prediction_normal.png)
+This project is intended as a proof-of-concept deep learning workflow for medical image classification.
 
-### Malignant Prediction
+The current results are based on a dataset-specific train-test split and do not include external validation, patient-level splitting, or clinical testing.
 
-![Prediction Malignant](images/prediction_malignant.png)
-
-These examples illustrate how the trained CNN model predicts lung CT scan images.
-
----
-
-# Limitations
-
-This project is intended as a **proof-of-concept deep learning workflow** for medical image classification.
-
-The current results are based on a dataset-specific train-test split and do not include:
-
-- external validation datasets  
-- patient-level splitting  
-- clinical validation  
-
-Therefore, the results should **not be interpreted as clinical diagnostic performance**.
-
+Therefore, the results should not be interpreted as medical diagnostic performance.
 ---
 
 # Project Structure
