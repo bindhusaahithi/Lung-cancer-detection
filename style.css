@@ -531,15 +531,6 @@ p {
   color: #ffe0a3;
 }
 
-.cta-card {
-  text-align: center;
-}
-
-.cta-card p {
-  max-width: 620px;
-  margin: 12px auto 24px;
-}
-
 .footer {
   width: min(1120px, calc(100% - 40px));
   margin: 20px auto 42px;
