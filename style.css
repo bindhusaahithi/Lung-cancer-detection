@@ -194,6 +194,12 @@ main {
   background: rgba(255, 255, 255, 0.08);
 }
 
+.outline-btn {
+  color: var(--forest);
+  border: 1px solid rgba(24, 63, 57, 0.24);
+  background: rgba(255, 250, 241, 0.5);
+}
+
 .hero-panel {
   display: grid;
   gap: 16px;
@@ -273,6 +279,33 @@ p {
   margin-top: 12px;
 }
 
+.text-link {
+  color: var(--clay);
+  font-weight: 800;
+  border-bottom: 1px solid rgba(185, 101, 69, 0.4);
+}
+
+.text-link:hover {
+  color: var(--forest);
+}
+
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 16px;
+  padding: 9px 13px;
+  border-radius: 999px;
+  color: var(--forest);
+  background: rgba(225, 179, 87, 0.34);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.card-link:hover {
+  color: #fffaf1;
+  background: var(--forest);
+}
+
 .overview-grid {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
@@ -317,6 +350,24 @@ p {
 
 .large-card p {
   color: rgba(255, 250, 241, 0.78);
+}
+
+.dataset-source {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+}
+
+.dataset-source p {
+  max-width: 720px;
+}
+
+.source-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 .split-section {
@@ -454,8 +505,13 @@ p {
   .hero,
   .split-section,
   .overview-grid,
-  .wide-card {
+  .wide-card,
+  .dataset-source {
     grid-template-columns: 1fr;
+  }
+
+  .source-actions {
+    justify-content: flex-start;
   }
 
   .timeline,

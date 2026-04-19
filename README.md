@@ -21,6 +21,11 @@ Repository:
 
 The project uses the **IQ-OTHNCCD Lung Cancer Dataset**, which contains class-labeled lung CT scan images.
 
+Dataset source links:
+
+- Official Mendeley Data page: [IQ-OTH/NCCD Lung Cancer Dataset](https://data.mendeley.com/datasets/bhmdr45bh2/4)
+- Kaggle dataset: [IQ-OTHNCCD Lung Cancer Dataset](https://www.kaggle.com/datasets/adityamahimkar/iqothnccd-lung-cancer-dataset)
+
 Classes:
 
 - **Normal:** CT scans without lung cancer
