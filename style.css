@@ -56,16 +56,18 @@ a {
   top: 0;
   z-index: 20;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 24px;
-  padding: 18px min(6vw, 72px);
-  background: rgba(244, 239, 231, 0.84);
+  min-height: 76px;
+  padding: 14px min(6vw, 72px);
+  background: rgba(244, 239, 231, 0.88);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(18px);
 }
 
 .brand {
+  position: absolute;
+  left: min(6vw, 72px);
   font-family: Georgia, serif;
   font-size: 18px;
   font-weight: 700;
@@ -76,20 +78,34 @@ a {
 .navbar nav {
   display: flex;
   align-items: center;
-  gap: 20px;
+  justify-content: center;
+  gap: 10px;
   flex-wrap: wrap;
+  padding: 8px;
+  border: 1px solid rgba(24, 63, 57, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 250, 241, 0.72);
+  box-shadow: 0 12px 34px rgba(20, 39, 35, 0.08);
 }
 
 .navbar nav a {
-  color: var(--muted);
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  min-width: 96px;
+  padding: 10px 16px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  color: var(--forest);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+  transition: color 180ms ease, background 180ms ease, border-color 180ms ease, transform 180ms ease;
 }
 
 .navbar nav a:hover {
-  color: var(--clay);
+  color: #fffaf1;
+  border-color: rgba(24, 63, 57, 0.16);
+  background: var(--forest);
+  transform: translateY(-1px);
 }
 
 main {
@@ -526,16 +542,23 @@ p {
 
 @media (max-width: 720px) {
   .navbar {
-    align-items: flex-start;
     flex-direction: column;
-    padding: 16px 20px;
+    min-height: auto;
+    padding: 14px 20px;
+  }
+
+  .brand {
+    position: static;
   }
 
   .navbar nav {
+    width: 100%;
     gap: 12px;
+    border-radius: 24px;
   }
 
   .navbar nav a {
+    flex: 1 1 130px;
     font-size: 12px;
   }
 
