@@ -1,176 +1,177 @@
-# Lung Cancer Detection using Deep Learning
+# Lung Cancer Detection Using Deep Learning
 
 ## Project Overview
 
-This project explores the application of deep learning techniques for lung CT scan image classification using Convolutional Neural Networks (CNNs).
+This project explores lung CT scan image classification using Convolutional Neural Networks (CNNs). It is designed as a proof-of-concept deep learning workflow for medical image classification, covering image preprocessing, CNN model development, training, evaluation, prediction visualization, and portfolio presentation.
 
-The goal of the project is to build an end-to-end workflow that can classify lung CT scan images and demonstrate how deep learning models can learn visual features from medical imaging data.
+Two model workflows were developed:
 
-Two versions of the model were developed:
+- **Binary Classification Model:** classifies CT scans as `Cancer` or `Normal`
+- **Multi-Class Classification Model:** classifies CT scans as `Benign`, `Malignant`, or `Normal`
 
-• **Binary Classification Model**  
-Classifies CT scans as **Cancer** or **Normal**
+Live portfolio page:
+[https://bindhusaahithi.github.io/Lung-cancer-detection/](https://bindhusaahithi.github.io/Lung-cancer-detection/)
 
-• **Multi-Class Classification Model**  
-Classifies CT scans into:
-
-- Benign  
-- Malignant  
-- Normal  
-
-This project demonstrates a **proof-of-concept deep learning workflow**, including data preprocessing, CNN model development, training, evaluation, and visualization of model predictions.
+Repository:
+[https://github.com/bindhusaahithi/Lung-cancer-detection](https://github.com/bindhusaahithi/Lung-cancer-detection)
 
 ---
 
-# Dataset
+## Dataset
 
-The dataset used in this project is the **IQ-OTHNCCD Lung Cancer Dataset**, which contains CT scan images categorized into three classes.
+The project uses the **IQ-OTHNCCD Lung Cancer Dataset**, which contains class-labeled lung CT scan images.
 
-### Classes
+Classes:
 
-• **Normal** – CT scans without lung cancer  
-• **Benign** – Non-cancerous lung abnormalities  
-• **Malignant** – Cancerous lung tumors  
+- **Normal:** CT scans without lung cancer
+- **Benign:** non-cancerous lung abnormalities
+- **Malignant:** cancerous lung tumors
 
-### Dataset Characteristics
-
-- CT scan images
-- Class-labeled folders
-- Used for image classification experiments
-- Preprocessed and resized before model training
-
-All images were converted to grayscale and resized to **128 × 128 pixels** before training.
+All images are converted to grayscale, resized to `128 x 128` pixels, normalized, and prepared for CNN training.
 
 ---
 
-# Tools & Technologies
+## Tools And Technologies
 
-This project uses the following tools and libraries:
-
-**Programming Language**
 - Python
-
-**Deep Learning Framework**
-- TensorFlow
-- Keras
-
-**Data Processing**
-- NumPy
+- TensorFlow / Keras
 - OpenCV
-
-**Visualization**
+- NumPy
 - Matplotlib
 - Seaborn
-
-**Machine Learning Utilities**
 - Scikit-learn
-
-**Development Environment**
 - Jupyter Notebook
+- HTML / CSS
 
 ---
 
-# Project Workflow
+## Project Workflow
 
-The overall workflow of the project includes:
-
-1. Dataset preparation and folder organization
-2. Image preprocessing using OpenCV
-3. Image resizing and normalization
-4. Train-test dataset splitting
-5. CNN architecture development
-6. Model training using TensorFlow/Keras
-7. Model evaluation
-8. Visualization of training results
-9. Prediction on CT scan images
-10. Saving trained models
+1. Organize CT scan images into class-based folders
+2. Load images and handle unreadable files safely
+3. Convert images to grayscale
+4. Resize images to `128 x 128`
+5. Normalize pixel values
+6. Split data into training and testing sets
+7. Build CNN architectures for binary and multi-class classification
+8. Train and evaluate the models
+9. Visualize accuracy, loss, confusion matrix, prediction distribution, and examples
+10. Save trained Keras models
+11. Present the project as a portfolio case study
 
 ---
 
-# CNN Model Architecture
+## Model Architecture
 
 The CNN architecture includes:
 
-- Convolution Layers
-- MaxPooling Layers
-- Flatten Layer
-- Dense Layers
-- Dropout Layer
-- Output Layer
+- Convolution layers
+- MaxPooling layers
+- Flatten layer
+- Dense layers
+- Dropout layer
+- Output layer
 
-The model learns visual patterns from CT scan images and uses these learned features to classify lung conditions.
+The binary model uses a sigmoid output. The multi-class model uses a softmax output.
 
 ---
 
 ## Results
 
-The advanced CNN model demonstrates a proof-of-concept workflow for multi-class classification of lung CT scan images using the current dataset split.
-
-The following visualizations summarize model training behavior and prediction outputs.
-
----
+The advanced CNN model demonstrates a proof-of-concept workflow for classifying lung CT scan images using the current dataset split.
 
 ### Training Accuracy
 
 ![Training Accuracy](images/training_accuracy.png)
 
-This graph shows how training and validation accuracy changed during model training on the current dataset split.
-
----
+This chart shows how training and validation accuracy changed during model training.
 
 ### Training Loss
 
 ![Training Loss](images/training_loss.png)
 
-This graph shows how training and validation loss changed across training epochs.
-
----
+This chart shows how training and validation loss changed across epochs.
 
 ### Confusion Matrix
 
 ![Confusion Matrix](images/confusion_matrix.png)
 
-The confusion matrix summarizes prediction results across the **Benign**, **Malignant**, and **Normal** classes.
-
----
+The confusion matrix summarizes prediction behavior across the `Benign`, `Malignant`, and `Normal` classes.
 
 ### Prediction Distribution
 
 ![Prediction Distribution](images/prediction_distribution.png)
 
-This chart shows how many images were predicted for each class by the trained CNN model.
+This chart shows how predictions were distributed across the target classes.
+
+### Prediction Examples
+
+Normal prediction example:
+
+![Normal Prediction](images/prediction_normal.png)
+
+Benign prediction example:
+
+![Benign Prediction](images/prediction_benign.png)
+
+Malignant prediction example:
+
+![Malignant Prediction](images/prediction_malignant.png)
 
 ---
-
 
 ## Limitations
 
-This project is intended as a proof-of-concept deep learning workflow for medical image classification.
+This project is intended as a portfolio and educational proof of concept.
 
-The current results are based on a dataset-specific train-test split and do not include external validation, patient-level splitting, or clinical testing.
+The current results are based on a dataset-specific train-test split and do not include external validation, patient-level splitting, clinical testing, or deployment safeguards.
 
-Therefore, the results should not be interpreted as medical diagnostic performance.
+The model should not be used for medical decision-making, clinical diagnosis, or treatment planning.
+
 ---
 
-# Project Structure
-Lung-Cancer-Detection
-│
-├── images
-│ ├── training_accuracy.png
-│ ├── training_loss.png
-│ ├── confusion_matrix.png
-│ ├── prediction_distribution.png
-│ ├── prediction_normal.png
-│ └── prediction_malignant.png
+## Project Structure
 
-├── Notebook
-│ ├── basic_cnn_lung_cancer_detection.ipynb
-│ └── advanced_lung_cancer_detection.ipynb
-
-├── models
-│ ├── lung_cancer_cnn_model.keras
-│ └── advanced_lung_cancer_model.keras
-
+```text
+Lung-Cancer-Detection/
+├── images/
+│   ├── training_accuracy.png
+│   ├── training_loss.png
+│   ├── confusion_matrix.png
+│   ├── prediction_distribution.png
+│   ├── prediction_normal.png
+│   ├── prediction_benign.png
+│   └── prediction_malignant.png
+├── Notebook/
+│   ├── basic_cnn_lung_cancer_detection.ipynb
+│   └── advanced_lung_cancer_detection.ipynb
+├── models/
+│   ├── lung_cancer_cnn_model.keras
+│   └── advanced_lung_cancer_model.keras
 ├── index.html
 ├── style.css
-├── README.md
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## How To Run
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Open the notebooks in Jupyter:
+
+```bash
+jupyter notebook
+```
+
+Open the portfolio page locally:
+
+```bash
+open index.html
+```
