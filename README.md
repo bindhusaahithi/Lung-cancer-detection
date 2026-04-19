@@ -4,6 +4,16 @@
 
 This project explores lung CT scan image classification using Convolutional Neural Networks (CNNs). It is designed as a proof-of-concept deep learning workflow for medical image classification, covering image preprocessing, CNN model development, training, evaluation, prediction visualization, and portfolio presentation.
 
+## Recruiter Snapshot
+
+- Built an end-to-end computer vision pipeline for CT scan image classification.
+- Processed **1,097 CT scan images** across `Benign`, `Malignant`, and `Normal` classes.
+- Trained binary and multi-class CNN workflows using TensorFlow / Keras.
+- Achieved **99.09% test accuracy** on a 220-image held-out project split.
+- Reported **0.98 macro average F1-score** for the advanced multi-class model.
+- Presented model behavior with accuracy/loss curves, confusion matrix, prediction distribution, and sample predictions.
+- Framed the project responsibly as an educational proof of concept, not a clinical diagnosis tool.
+
 Two model workflows were developed:
 
 - **Binary Classification Model:** classifies CT scans as `Cancer` or `Normal`
@@ -50,6 +60,19 @@ All images are converted to grayscale, resized to `128 x 128` pixels, normalized
 
 ---
 
+## Skills Demonstrated
+
+- Computer vision preprocessing
+- CNN model building
+- Binary and multi-class classification
+- Train/test splitting and experiment evaluation
+- Classification reports, confusion matrix, and prediction analysis
+- Model artifact saving with Keras
+- Technical documentation and portfolio presentation
+- Responsible AI communication for a healthcare-related use case
+
+---
+
 ## Project Workflow
 
 1. Organize CT scan images into class-based folders
@@ -84,6 +107,14 @@ The binary model uses a sigmoid output. The multi-class model uses a softmax out
 ## Results
 
 The advanced CNN model demonstrates a proof-of-concept workflow for classifying lung CT scan images using the current dataset split.
+
+Performance summary:
+
+- **Test accuracy:** 99.09%
+- **Macro average F1-score:** 0.98
+- **Evaluation split:** 220 held-out CT images
+
+These numbers are dataset-specific portfolio results and should not be interpreted as clinical validation.
 
 ### Training Accuracy
 
