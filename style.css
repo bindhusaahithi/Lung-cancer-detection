@@ -56,23 +56,14 @@ a {
   top: 0;
   z-index: 20;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 76px;
-  padding: 14px min(6vw, 72px);
+  min-height: 78px;
+  padding: 16px min(6vw, 72px);
   background: rgba(244, 239, 231, 0.88);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(18px);
-}
-
-.brand {
-  position: absolute;
-  left: min(6vw, 72px);
-  font-family: Georgia, serif;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  color: var(--forest);
 }
 
 .navbar nav {
@@ -81,6 +72,9 @@ a {
   justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
   padding: 8px;
   border: 1px solid rgba(24, 63, 57, 0.14);
   border-radius: 999px;
@@ -542,13 +536,8 @@ p {
 
 @media (max-width: 720px) {
   .navbar {
-    flex-direction: column;
     min-height: auto;
     padding: 14px 20px;
-  }
-
-  .brand {
-    position: static;
   }
 
   .navbar nav {
