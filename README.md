@@ -73,6 +73,28 @@ All images are converted to grayscale, resized to `128 x 128` pixels, normalized
 
 ---
 
+## Role And Deliverables
+
+My role in this project covered the full workflow:
+
+- Prepared class-based CT image datasets for model training
+- Built binary and multi-class CNN models
+- Evaluated model behavior using accuracy, loss, classification report, confusion matrix, and prediction examples
+- Saved trained Keras model artifacts
+- Created a live HTML/CSS portfolio page for recruiter-facing presentation
+- Documented the project with a clear README and responsible AI limitations
+
+Key deliverables:
+
+- Jupyter notebooks
+- Trained model files
+- Evaluation plots
+- Prediction visualizations
+- Live portfolio website
+- Recruiter-friendly README documentation
+
+---
+
 ## Project Workflow
 
 1. Organize CT scan images into class-based folders
@@ -163,6 +185,16 @@ This project is intended as a portfolio and educational proof of concept.
 The current results are based on a dataset-specific train-test split and do not include external validation, patient-level splitting, clinical testing, or deployment safeguards.
 
 The model should not be used for medical decision-making, clinical diagnosis, or treatment planning.
+
+---
+
+## Future Improvements
+
+- Validate the model on an external CT scan dataset from a separate source
+- Use patient-level splitting to reduce data leakage risk
+- Add explainability methods such as Grad-CAM to highlight image regions influencing predictions
+- Compare the CNN against transfer learning architectures
+- Add deployment safeguards and human-review boundaries before any real-world medical use
 
 ---
 
