@@ -171,9 +171,9 @@ main {
 
 .hero-actions {
   display: flex;
-  gap: 20px;
+  gap: 14px;
   flex-wrap: wrap;
-  margin-top: 42px;
+  margin-top: 36px;
 }
 
 .btn {
@@ -205,36 +205,36 @@ main {
 }
 
 .hero-actions .btn {
-  min-width: 176px;
-  min-height: 58px;
-  padding: 17px 30px;
+  min-width: 164px;
+  min-height: 50px;
+  padding: 13px 24px;
   border-radius: 999px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 900;
-  letter-spacing: 0.015em;
-  backdrop-filter: blur(10px);
+  letter-spacing: 0.01em;
+  backdrop-filter: blur(12px);
 }
 
 .hero-actions .primary-btn {
   color: #17332f;
   background: linear-gradient(135deg, #f5c85b 0%, #e1b357 55%, #c9922e 100%);
   box-shadow:
-    0 18px 42px rgba(225, 179, 87, 0.34),
+    0 14px 32px rgba(225, 179, 87, 0.3),
     0 0 0 1px rgba(255, 250, 241, 0.18) inset;
 }
 
 .hero-actions .secondary-btn {
   color: #fffaf1;
-  border: 1px solid rgba(255, 250, 241, 0.2);
-  background: rgba(15, 39, 35, 0.55);
+  border: 1px solid rgba(255, 250, 241, 0.14);
+  background: linear-gradient(180deg, rgba(31, 79, 72, 0.92), rgba(22, 57, 52, 0.96));
   box-shadow:
-    0 16px 32px rgba(9, 24, 22, 0.22),
-    inset 0 0 0 1px rgba(255, 250, 241, 0.06);
+    0 10px 24px rgba(9, 24, 22, 0.18),
+    0 0 0 2px rgba(255, 250, 241, 0.08);
 }
 
 .hero-actions .secondary-btn:hover {
   color: #fffaf1;
-  background: rgba(24, 63, 57, 0.88);
+  background: linear-gradient(180deg, rgba(36, 91, 83, 0.96), rgba(24, 63, 57, 0.98));
 }
 
 .outline-btn {
