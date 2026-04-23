@@ -206,9 +206,9 @@ main {
 }
 
 .hero-actions .btn {
-  min-width: 140px;
-  min-height: 42px;
-  padding: 10px 22px;
+  min-width: 148px;
+  min-height: 44px;
+  padding: 11px 24px;
   border-radius: 999px;
   font-size: 13px;
   font-weight: 900;
@@ -229,11 +229,11 @@ main {
 
 .hero-actions .secondary-btn {
   color: #fffaf1;
-  border: 1px solid rgba(255, 250, 241, 0.12);
-  background: linear-gradient(180deg, rgba(31, 79, 72, 0.78), rgba(19, 48, 44, 0.94));
+  border: 1px solid rgba(255, 250, 241, 0.14);
+  background: linear-gradient(180deg, rgba(34, 83, 76, 0.8), rgba(21, 51, 47, 0.96));
   box-shadow:
-    0 10px 20px rgba(6, 18, 16, 0.24),
-    inset 0 0 0 2px rgba(255, 250, 241, 0.08);
+    0 10px 20px rgba(6, 18, 16, 0.22),
+    inset 0 0 0 2px rgba(255, 250, 241, 0.09);
 }
 
 .hero-actions .secondary-btn:hover {
